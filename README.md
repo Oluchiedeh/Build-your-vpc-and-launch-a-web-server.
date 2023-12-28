@@ -4,7 +4,7 @@
 
 ![](diagram.jpeg)
 
-**Architecture diagram.*
+*Architecture diagram.*
 
 Virtual Private Cloud (VPC) allows you to launch AWS resources into a virtual network that you defined.
 
@@ -22,8 +22,9 @@ In the contemporary digital arena, establishing a Virtual Private Cloud (VPC) an
 - Let's start by creating a VPC. Make sure you are in the **N. Virginia (us-east-1)** region.
 - Where the service button is positioned, click on it and search for VPC, click on it, and next click on **Create VPC.**
 
+![](vpc1.jpeg)
 
-VPC dashboard.
+*VPC dashboard.*
 
 **1. Configure the VPC details:**
 
@@ -31,14 +32,27 @@ VPC dashboard.
 - Under **Name tag auto-generation**, keep **Auto-generate** selected, however, change the value from project to **lab**
 - Keep the **IPv4 CIDR block** set to **10.0.0.0/16**
 
-VPC Configuration process.For the Number of Availability Zones, choose 1.
-For the Number of public subnets, keep the 1 setting.
-For the Number of private subnets, keep the 1 setting.
-Expand the Customize subnets CIDR blocks section
+![](vpc2.jpeg)
 
- Change Public subnet CIDR block in us-east-1a to 10.0.0.0/24
-VPC Configuration process.Change Private subnet CIDR block in us-east-1a to 10.0.1.0/24
-Set NAT gateways to In 1 AZ.
-Set VPC endpoints to None.
-Keep both DNS hostnames and DNS resolution enabled.
-Then click on the `Create VPC` button.
+*VPC Configuration process.*
+
+- For the **Number of Availability Zones**, choose **1.**
+- For the **Number of public subnets**, keep the **1** setting.
+- For the **Number of private subnets**, keep the **1** setting.
+- Expand the **Customize subnets CIDR blocks** section
+
+ Change **Public subnet CIDR block** in us-east-1a to **10.0.0.0/24**
+ Change **Private subnet CIDR block** in us-east-1a to **10.0.1.0/24**
+
+![](vpc3.jpeg)
+
+*VPC Configuration process.*
+
+- Set **NAT gateways** to In **1 AZ.**
+- Set **VPC endpoints** to **None.**
+- Keep both **DNS hostnames** and **DNS resolution enabled.**
+- Then click on the **`Create VPC`** button.
+
+![](vpc4.jpeg)
+
+*Configuration end page.*
