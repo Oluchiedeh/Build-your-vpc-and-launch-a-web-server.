@@ -56,3 +56,8 @@ In the contemporary digital arena, establishing a Virtual Private Cloud (VPC) an
 ![](vpc4.jpeg)
 
 *Configuration end page.*
+
+**Note:** The VPC wizard has created a VPC with a public subnet and a private subnet on one availability zone with route tables for each subnet. And also an internet Gateway and NAT Gateway.
+![](vpc5.png)
+
+*created VPC network.*
