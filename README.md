@@ -61,3 +61,31 @@ In the contemporary digital arena, establishing a Virtual Private Cloud (VPC) an
 ![](vpc5.png)
 
 *created VPC network.*
+
+# Task 2: Create Additional Subnets:
+
+Here, create two additional subnets to the ones previously provisioned, a private and a public subnet in a second availability zone. 
+Having subnets in multiple Availability zones within a VPC is useful for deploying a solution that provides high availability.
+
+- On the left navigation pane, choose **Subnet**, and create a public subnet first.
+- Choose **Create subnet** then configure:
+
+ ![](vpc5.png) 
+  
+- VPC ID: **lab-vpc** (select from the menu).
+- Subnet name: **lab-subnet-public2**
+
+- Availability Zone: Select the second Availability Zone (for example, us-east-1b)
+- IPv4 CIDR block: **10.0.2.0/24**
+
+- Choose **Create subnet**.
+
+- Now, create the second private subnet.
+  
+- Choose **Create subnet** then configure:
+
+- VPC ID: **lab-vpc**
+- Subnet name: **lab-subnet-private2**
+- Availability Zone: Select the second Availability Zone (for example, us-east-1b)
+- IPv4 CIDR block: **10.0.3.0/24**
+- Choose **Create subnet**
