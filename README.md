@@ -1,7 +1,11 @@
 # Build-your-vpc-and-launch-a-web-server.
 
-A Step-by-Step Guide to Building Your VPC and Launching a Web Server on AWS.
-Architecture diagram.Virtual Private Cloud (VPC) allows you to launch AWS resources into a virtual network that you defined.
+**A Step-by-Step Guide to Building Your VPC and Launching a Web Server on AWS.**
+
+
+Architecture diagram.
+
+Virtual Private Cloud (VPC) allows you to launch AWS resources into a virtual network that you defined.
 In the contemporary digital arena, establishing a Virtual Private Cloud (VPC) and deploying a web server provides fundamental pillars for multiple online ventures. Amazon Web Services (AWS), a cloud computing platform, has established robust tools to create a secure VPC environment and effortlessly launch a web server in the cloud. This comprehensive guide is designed to assist you through the entire process.
 Prerequisite:
 Create VPC, and add components to produce a customized network.
