@@ -2,6 +2,8 @@
 
 **A Step-by-Step Guide to Building Your VPC and Launching a Web Server on AWS.**
 
+![](WhatsApp Image 2023-12-21 at 14.53.10.jpeg)
+
 
 Architecture diagram.
 
