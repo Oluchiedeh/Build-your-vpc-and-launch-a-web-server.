@@ -100,4 +100,48 @@ Having subnets in multiple Availability zones within a VPC is useful for deployi
 - IPv4 CIDR block: **10.0.3.0/24**
 - Choose **Create subnet**
 
-  ![](subnet7.jpeg) 
+  ![](subnet7.jpeg)
+
+To enable internet-bound traffic for the new private subnet, you'll configure it to route through the NAT Gateway while maintaining the privacy of the resources. 
+This involves setting up a Route Table.
+
+A Route Table consists of rules, known as routes, which dictate the path of network traffic. Every subnet within a VPC needs to be linked to a route table; this table governs the routing specifics for that subnet.
+
+
+
+In the left navigation pane, choose Route Tables.
+Select the lab-rtb-private1-us-east-1a route table.
+In the lower pane, choose the Routes tab.
+![](routeT1.jpeg)
+
+Choose the Subnet Associations tab.
+
+You created this route table in task 1 when you chose to create a VPC and multiple resources in the VPC. 
+That action also created lab-subnet-private-1 and associated that subnet with this route table.
+
+Now that you have created another private subnet, **lab-subnet-private-2**, you will associate this route table with that subnet as well.
+- In the Explicit subnet associations panel, choose **Edit subnet associations.**
+- Leave **lab-subnet-private1-us-east-1a** selected, but also select **lab-subnet-private2.**
+- Choose Save associations
+
+![](routeT2.jpeg)
+
+- You will now configure the Route Table that is used by the Public Subnets.
+- Select the **lab-rtb-public route table** (and deselect any other subnets).
+- In the lower pane, choose the **Routes tab.**
+
+![](routeT3.jpeg)
+
+- Choose the Subnet Associations tab.
+- In the Explicit subnet associations area, choose Edit subnet associations
+- Leave **lab-subnet-public1-us-east-1a** selected, but also select **lab-subnet-public2**.
+- Choose **Save associations.**
+
+![](routeT4.jpeg)
+
+Your VPC now has public and private subnets configured in two Availability Zones. 
+The route tables you created in Task 1 have also been updated to route network traffic for the two new subnets.
+You will have this diagram now, gradually the architectural diagram is coming to its final state.
+
+
+Architectural diagram.
