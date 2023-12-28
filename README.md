@@ -140,8 +140,12 @@ Now that you have created another private subnet, **lab-subnet-private-2**, you 
 ![](routeT4.jpeg)
 
 Your VPC now has public and private subnets configured in two Availability Zones. 
+
 The route tables you created in Task 1 have also been updated to route network traffic for the two new subnets.
+
 You will have this diagram now, gradually the architectural diagram is coming to its final state.
 
+
+![](ARCHITECTURE.png)
 
 Architectural diagram.
