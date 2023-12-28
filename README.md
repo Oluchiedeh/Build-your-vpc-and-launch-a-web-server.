@@ -188,5 +188,75 @@ During this task, you aim to initiate an Amazon EC2 instance within the new VPC.
 - In the search box to the right of **Services**, search for and choose **EC2** to open the EC2 console.
 - From the Launch instance menu choose **Launch instance.**
 
+![](EC2-1.jpeg) 
 
+Name the instance:
 
+- Give it the name **Web Server 1**.
+
+![](EC2-2.jpeg) 
+
+Choose an **AMI** from which to create the instance:
+
+- In the list of available **Quick Start AMIs**, keep the default **Amazon Linux** selected.
+- Also, keep the default **Amazon Linux 2023 AMI** selected.
+
+![](EC2-3.jpeg) 
+
+Choose an Instance type:
+
+- In the Instance type panel, keep the default **t2.micro** selected.
+
+![](EC2-4.jpeg) 
+
+Select the key pair to associate with the instance:
+- From the Key pair name menu, select **Create key pair**.
+- Name: **Web-server**.
+
+![](EC2-5.jpeg) 
+
+Configure the Network settings:
+
+- Next to Network settings, choose **Edit**, then configure:
+- Network: **lab-vpc**
+- Subnet: **lab-subnet-public2** (not Private!)
+- Auto-assign public IP: **Enable**.
+- Next, you will configure the instance to use the **Web Security Group** that you created earlier.
+- Under Firewall (security groups), choose Select existing **security group**.
+- For Common security groups, select **Web Security Group**.
+  
+- This security group will permit HTTP access to the instance.
+
+![](EC2-6.jpeg) 
+
+- In the Configure storage section, keep the default settings.
+- Configure a script to run on the instance when it launches:
+- Expand the **Advanced details** panel.
+- Scroll to the bottom of the page and then copy and paste the code shown below into the **User data** box:
+
+`#!/bin/bash`
+
+*Install Apache Web Server and PHP*
+
+`dnf install -y httpd wget php mariadb105-server`
+
+ *Download Lab files*
+
+`wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-100-ACCLFO-2/2-lab2-vpc/s3/lab-app.zip
+unzip lab-app.zip -d /var/www/html/`
+
+*Turn on the web server*
+
+`chkconfig httpd on`
+
+`service httpd start`
+
+![](EC2-7.jpeg) 
+
+# Congratulation!!
+
+**Conclusion:** 
+
+Building a VPC and setting up a web server on AWS involves integrating several components seamlessly. This guide acts as a fundamental blueprint, guaranteeing a secure and efficient setup for hosting web services. It's crucial to prioritize security, adhere to best practices, and consistently monitor and refine your VPC to adapt to changing needs.
+
+By mastering the art of VPC creation and web server deployment, you're poised to leverage the scalability, reliability, and security that AWS offers, empowering your online presence to thrive in today's dynamic digital landscape.
