@@ -180,3 +180,13 @@ These security groups can be customized by adding rules that dictate the allowan
 ![](SG4.jpeg) 
 
 - You will use this security group in the next task when launching an Amazon EC2 instance.
+
+# Task 4: Launch a Web Server Instance:
+
+During this task, you aim to initiate an Amazon EC2 instance within the new VPC. Your configuration for this instance will gear it to function as a web server.
+
+- In the search box to the right of **Services**, search for and choose **EC2** to open the EC2 console.
+- From the Launch instance menu choose **Launch instance.**
+
+
+
