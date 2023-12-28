@@ -70,22 +70,34 @@ Having subnets in multiple Availability zones within a VPC is useful for deployi
 - On the left navigation pane, choose **Subnet**, and create a public subnet first.
 - Choose **Create subnet** then configure:
 
- ![](vpc5.png) 
+ ![](subnet1.jpeg) 
   
 - VPC ID: **lab-vpc** (select from the menu).
 - Subnet name: **lab-subnet-public2**
 
+![](subnet2.jpeg) 
+
 - Availability Zone: Select the second Availability Zone (for example, us-east-1b)
 - IPv4 CIDR block: **10.0.2.0/24**
 
+![](subnet3.jpeg) 
+
 - Choose **Create subnet**.
 
+![](subnet4.jpeg) 
+
 - Now, create the second private subnet.
-  
 - Choose **Create subnet** then configure:
+
+![](subnet5.jpeg) 
 
 - VPC ID: **lab-vpc**
 - Subnet name: **lab-subnet-private2**
+
+  ![](subnet6.jpeg)
+  
 - Availability Zone: Select the second Availability Zone (for example, us-east-1b)
 - IPv4 CIDR block: **10.0.3.0/24**
 - Choose **Create subnet**
+
+  ![](subnet7.jpeg) 
