@@ -251,9 +251,13 @@ unzip lab-app.zip -d /var/www/html/`
 
 `service httpd start`
 
+*The script installs a web server, a database, and PHP libraries, and then it downloads and installs a PHP web application on the web server.*
+
 ![](EC2-7.jpeg) 
 
 # Congratulation!!
+
+![](AWS.png) 
 
 **Conclusion:** 
 
