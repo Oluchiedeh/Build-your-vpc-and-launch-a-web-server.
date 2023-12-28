@@ -149,3 +149,34 @@ You will have this diagram now, gradually the architectural diagram is coming to
 ![](ARCHITECTURE.png)
 
 Architectural diagram.
+
+# Task 3: Create a VPC Security Group:
+
+During this task, your objective is to generate a VPC security group functioning as a virtual firewall. 
+As you launch an instance, you'll pair one or multiple security groups with it. 
+These security groups can be customized by adding rules that dictate the allowance or restriction of traffic to and from the instances they're linked to.
+
+- In the left navigation pane, choose **Security Groups.**
+- Choose **Create security group** and then *configure*:
+  
+![](SG1.jpeg)
+
+- Security group name: **Web Security Group**
+- Description: **Enable HTTP access**
+- VPC: choose the X to remove the currently selected VPC, then from the drop-down list choose **lab-vpc.**
+
+![](SG2.jpeg) 
+
+- In the Inbound rules pane, choose **Add rule**
+- Configure the following settings:
+- Type: **HTTP**
+- Source: **Anywhere-IPv4**
+- Description: **Permit web requests.**
+
+![](SG3.jpeg) 
+
+- Scroll to the bottom of the page and choose **Create security group**.
+
+![](SG4.jpeg) 
+
+- You will use this security group in the next task when launching an Amazon EC2 instance.
